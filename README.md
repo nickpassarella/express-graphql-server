@@ -1,13 +1,8 @@
 ## About
-This is where I am keeping my code as I follow along with the _Build a GraphQL Server_ course on [egghead.io](https://egghead.io/courses/build-a-graphql-server).
+This is where my code lives for following along with the [_Build a GraphQL Server_](https://egghead.io/courses/build-a-graphql-server) course on [egghead.io](https://egghead.io).
 
 ## Running the server
-Clone this repo and navigate to its root directory.
-
-Install dependencies:
-`yarn install` or `npm install`
-
-Start the local server:
-`npm start`
-
-When the server is running, open your browser and go to `http://localhost:3000/graphql` to access the GraphiQL browser.
+1. Clone this repo and navigate to its root directory: `git clone git@github.com:nickpassarella/express-graphql-server.git && cd express-graphql-server`
+2. Install dependencies: `npm install` or `yarn install`
+3. Start the server: `npm start`
+4. Check out the GraphiQL browser: [http://localhost:3000/graphql](http://localhost:3000/graphql)
