@@ -2,6 +2,7 @@
 
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
+
 const {
   GraphQLSchema,
   GraphQLObjectType,
@@ -59,7 +60,7 @@ const { connectionType: VideoConnection } = connectionDefinitions({
       description: 'A count of the total number of objects in this connection.',
       resolve: (conn) => {
         return conn.edges.length;
-      }
+      },
     }
   })
 });
@@ -101,7 +102,7 @@ const videoMutation = mutationWithClientMutationId({
     },
     duration: {
       type: new GraphQLNonNull(GraphQLInt),
-      description: 'The duration of the video (in seconds).'
+      description: 'The duration of the video (in seconds).',
     },
     released: {
       type: new GraphQLNonNull(GraphQLBoolean),

@@ -2,14 +2,14 @@ const videoA = {
   id: 'a',
   title: 'video one',
   duration: 120,
-  watched: true
+  released: true,
 };
 
 const videoB = {
   id: 'b',
   title: 'video two',
   duration: 240,
-  watched: false
+  released: false,
 };
 
 const videos = [videoA, videoB];
